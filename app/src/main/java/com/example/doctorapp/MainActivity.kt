@@ -32,8 +32,8 @@ class MainActivity : AppCompatActivity() {
         recyclerView = findViewById(R.id.recyclerView)
         recyclerView.layoutManager = LinearLayoutManager(this)
 
-        val data = listOf("dr. Gilang Segara Bening", "dr. Shabil Chan", "dr. Mustakim", "dr. Suprihatini", "dr. Suprihatini") // Replace with your actual data
-        val images = listOf(R.drawable.doc1_profile, R.drawable.doc2_profile, R.drawable.doc3_profile, R.drawable.doc3_profile, R.drawable.doc3_profile) // Replace with your actual image resources
+        val data = listOf("dr. Gilang Segara Bening", "dr. Shabil Chan", "dr. Mustakim", "dr. Suprihatini", "dr. Suprihatini", "dr. Gilang Segara Bening", "dr. Shabil Chan", "dr. Mustakim", "dr. Suprihatini", "dr. Suprihatini") // Replace with your actual data
+        val images = listOf(R.drawable.doc1_profile, R.drawable.doc2_profile, R.drawable.doc3_profile, R.drawable.doc3_profile, R.drawable.doc3_profile, R.drawable.doc1_profile, R.drawable.doc2_profile, R.drawable.doc3_profile, R.drawable.doc3_profile, R.drawable.doc3_profile) // Replace with your actual image resources
 
         val adapter = MyAdapter(data, images) { selectedItem ->
             val selectedIndex = data.indexOf(selectedItem)
